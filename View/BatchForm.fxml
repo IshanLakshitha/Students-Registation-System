@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="507.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ijse.com.student.Controller.BatchController">
+   <children>
+      <ComboBox fx:id="comboBoxCourse" layoutX="128.0" layoutY="92.0" prefHeight="25.0" prefWidth="337.0" />
+      <Label layoutX="140.0" layoutY="14.0" text="Manage Batches">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="96.0" prefHeight="17.0" prefWidth="51.0" text="Courses :" />
+      <Label layoutX="37.0" layoutY="143.0" text="Batch ID :" />
+      <TextField fx:id="txtBatchID" layoutX="128.0" layoutY="139.0" prefHeight="25.0" prefWidth="105.0" />
+      <Label layoutX="252.0" layoutY="143.0" text="Starting Date :" />
+      <Label layoutX="37.0" layoutY="183.0" text="Description :" />
+      <TextField fx:id="txtDes" layoutX="128.0" layoutY="179.0" prefHeight="25.0" prefWidth="337.0" />
+      <Label layoutX="37.0" layoutY="230.0" text="Batch Capacity :" />
+      <TextField fx:id="txtCapacity" layoutX="128.0" layoutY="226.0" />
+      <Button fx:id="btnSave" layoutX="155.0" layoutY="286.0" mnemonicParsing="false" onAction="#clickSave" prefHeight="25.0" prefWidth="98.0" text="Save" />
+      <Button fx:id="btnDelete" layoutX="367.0" layoutY="286.0" mnemonicParsing="false" onAction="#clickDelete" prefHeight="25.0" prefWidth="98.0" text="Delete" />
+      <TableView fx:id="tblBaches" layoutX="36.0" layoutY="322.0" prefHeight="166.0" prefWidth="429.0">
+        <columns>
+          <TableColumn prefWidth="56.0" text="Batch ID" />
+          <TableColumn prefWidth="129.0" text="Course " />
+            <TableColumn prefWidth="89.0" text="Starting Data" />
+            <TableColumn prefWidth="94.0" text="Description" />
+            <TableColumn prefWidth="60.0" text="Capacity" />
+        </columns>
+      </TableView>
+      <Button layoutX="437.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBack" text="Back" />
+      <Button fx:id="btnadd" layoutX="37.0" layoutY="286.0" mnemonicParsing="false" onAction="#clickAdd" prefHeight="25.0" prefWidth="98.0" text="Add" />
+      <TextField fx:id="txtDate" layoutX="335.0" layoutY="139.0" prefHeight="25.0" prefWidth="129.0" />
+   </children>
+</AnchorPane>

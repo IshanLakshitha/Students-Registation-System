@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ijse.com.student.Controller.RegisterExistingStudentController">
+   <children>
+      <Label layoutX="147.0" layoutY="14.0" text="Existing Student">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchID" layoutX="240.0" layoutY="62.0" onKeyReleased="#clickSearchID" prefHeight="25.0" prefWidth="247.0" promptText="Search Student ID" />
+      <ComboBox fx:id="comboCourse" layoutX="131.0" layoutY="147.0" prefHeight="25.0" prefWidth="270.0" />
+      <Label layoutX="58.0" layoutY="151.0" text="Course :" />
+      <Label layoutX="56.0" layoutY="198.0" text="Batches :" />
+      <ComboBox fx:id="comboBatches" layoutX="132.0" layoutY="194.0" prefHeight="25.0" prefWidth="175.0" />
+      <Button layoutX="54.0" layoutY="239.0" mnemonicParsing="false" onAction="#clickAdd" prefHeight="25.0" prefWidth="67.0" text="Add" />
+      <Button layoutX="147.0" layoutY="239.0" mnemonicParsing="false" onAction="#clickDelete" prefHeight="25.0" prefWidth="67.0" text="Delete" />
+      <TableView fx:id="tblCourse" layoutX="54.0" layoutY="278.0" prefHeight="132.0" prefWidth="427.0">
+        <columns>
+          <TableColumn prefWidth="325.0" text="Course" />
+          <TableColumn prefWidth="100.0" text="Batch" />
+        </columns>
+      </TableView>
+      <Button layoutX="400.0" layoutY="431.0" mnemonicParsing="false" onAction="#clickSave" prefHeight="25.0" prefWidth="81.0" text="Save" />
+      <Button layoutX="441.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBack" text="Back" />
+      <Label layoutX="58.0" layoutY="110.0" text="Student ID :" />
+      <TextField layoutX="131.0" layoutY="106.0" />
+   </children>
+</AnchorPane>
